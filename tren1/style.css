@@ -1,0 +1,25 @@
+#main {
+    background-color: aqua;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    max-width: 300px;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+button{
+    width: 200px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 4px;
+    border: 1px solid gray;
+
+}
