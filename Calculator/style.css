@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+.calculator {
+    width: 350px;
+    height: 90vh;
+    background-color: rgb(143, 175, 168);
+    margin: 30px auto;
+    border-radius: 7px;
+}
+
+.display {
+    width: 85%;
+    height: 80px;
+    margin: 40px auto;
+    background-color: rgb(47, 192, 79);
+    border: 6px solid rgba(12, 46, 7, 0.134);
+    border-radius: 5px;
+    display: flex;
+    
+}
+.display-text{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    justify-content: baseline;
+    letter-spacing: 2px;
+}
+
+.wrapper {
+    width: 85%;
+    height: 65px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.solar {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+.solar-cell {
+    width: 30px;
+    height: 50px;
+    background-color: rgb(78, 55, 43);
+    border: 2px solid rgb(67, 44, 28);
+}
+
+.keyboard {
+    width: 90%;
+    margin: 70px auto 3px;
+    padding: 0 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 4px solid rgba(56, 33, 22, 0.249);
+    border-radius: 5px;
+}
+
+.keys1 {
+    display: flex;
+    justify-content: end;
+}
+
+.math-keys {
+    display: flex;
+    flex-direction: column;
+}
+
+button:not(#clear, #plus) {
+    height: 30px;
+    width: 60px;
+    margin: 15px 4px;
+    border: 2px solid rgb(86, 123, 115);
+    border-radius: 5px;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 20px;
+}
+
+#clear {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 40px;
+    width: 90px;
+    border: 2px solid rgb(86, 123, 115);
+    border-radius: 5px;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+#plus {
+    height: 90px;
+    width: 60px;
+    margin: 15px 3px;
+    border: 2px solid rgb(86, 123, 115);
+    border-radius: 5px;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+p {
+    width: 88%;
+    margin: auto;
+    text-align: end;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
