@@ -65,3 +65,23 @@ img {
   color: #c0c0c0;
   padding-bottom: 40px;
 }
+
+@media (max-width: 780px) {
+  .main-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  img {
+    height: 300px;
+    width: 170px;
+    margin-top: -40px;
+    margin-left: 15%;
+  }
+
+  .side,
+  .square-diagonal,
+  .height {
+    margin-left: 10%;
+    line-height: 25px;
+  }
+}

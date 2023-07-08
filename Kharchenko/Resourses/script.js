@@ -28,5 +28,9 @@ calcButton.addEventListener("click", function () {
     }
   } else {
     title.innerText = `Введите правильные параметры. Для разделителя используйте точку`;
+    side.innerText = '';
+      squareDiagonal.innerText = '';
+      height.innerText = '';
+      wireLength.innerText = '';
   }
 });
