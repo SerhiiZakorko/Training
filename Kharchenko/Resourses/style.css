@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cuprum", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  padding: 50px 10% 0 10%;
+}
+h1 {
+  text-align: center;
+  font-size: 35px;
+  font-family: "Cuprum", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+input {
+  width: 15%;
+  min-width: 135px;
+  border-radius: 8px;
+  border: 2px solid rgb(82, 82, 82);
+  padding: 10px 25px 7px 10px;
+}
+button {
+  padding: 10px 25px 7px 25px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(225, 226, 225);
+  font-size: 16px;
+  letter-spacing: 1.2px;
+}
+.main-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+img {
+  height: 450px;
+  width: 270px;
+  margin-top: -40px;
+}
+.side,
+.square-diagonal,
+.height {
+  margin-left: 90px;
+  line-height: 40px;
+}
+
+.sign {
+  position: fixed;
+  left: 10%;
+  bottom: 0;
+}
+.sign-text {
+  font-size: 12px;
+  color: #c0c0c0;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 780px) {
+  .main-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  img {
+    height: 300px;
+    width: 170px;
+    margin-top: -40px;
+    margin-left: 15%;
+  }
+
+  .side,
+  .square-diagonal,
+  .height {
+    margin-left: 10%;
+    line-height: 25px;
+  }
+}

@@ -1,13 +1,33 @@
-const arr = [4, 4, 8, 8, 12, 12, 5, 7, 7, 10, 10, 88, 88];
+/*
 
-function getSingleElement() {
-  let result = 0;
-  for (i = 0; i < arr.length; i = i + 2) {
-    if (arr[i] !== arr[i + 1]) 
-    break;
-    result = arr[i + 2];
-  }
+let text = document.querySelector(".text")
+//text.style.color = "brown"
 
-  return result;
+let link = document.querySelector("link") //применили стиль класса из css для парагрфа
+link.setAttribute("href","style.css")
+text.setAttribute("class", "info")
+
+*/
+
+/*
+
+const body = document.querySelector("body");  //создаем новые теги
+const main = document.createElement("div");
+const info = document.createElement("p");
+
+body.append(main, info);
+info.innerText = "Your element is: ";
+
+const element = prompt("Enter your element: ");
+
+if (element === "p" || element === "a") {
+  const text = prompt("text: p");
 }
-console.log(getSingleElement(arr));
+
+const result = document.createElement(element);
+
+body.prepend(result);
+
+info.innerText += result.nodeName;
+
+*/

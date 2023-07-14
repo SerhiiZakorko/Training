@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding-top: 30px;
+}
+
+#start{
+    margin-left: 20% ;
+    padding: 10px 50px;
+    font-size: 20px;
+}
+    body{
+    background-color: rgb(168, 138, 196);
+}
+#area{
+    width: 500px;
+    aspect-ratio: 1;
+    margin:  100px auto;
+    background-color: white;
+    border: 5px solid rgb(12, 146, 12);
+    overflow: hidden;  /* скрыть элементы за пределами */
+}
+#object{
+    width: 60px;
+    aspect-ratio: 1;
+    background-color: rgb(255, 121, 147);
+    transform: translateY(-70px);
+    border-radius: 50%;
+    position: relative;
+}
+#object.start {
+    animation-name: movement; /* Анимация движения*/
+    animation-duration: 5s; /* Продолжительность движения*/
+    animation-iteration-count: infinite; /* Количество повторений анимации- бесконечно*/
+    animation-timing-function: linear /* Скорость линейная. Есть разные варианты: имитация капли итд*/
+}
+@keyframes movement { /*Анимация дыижения.*/
+    to{
+        transform: translateY(500px); /* Указываем, к какому положению привести элемент при анимации*/
+        /*width: 30px;   Можно изменять размер при движении*/
+    }
+}
