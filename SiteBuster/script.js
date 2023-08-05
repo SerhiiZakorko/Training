@@ -12,7 +12,7 @@ function toggleButton(){
 function changeText(){
     const text = document.querySelector('h1')
     const delite = document.querySelector('.delete')
-    text.innerText = 'Поздравляем! Ваш сайтраскручен!'
+    text.innerText = 'Поздравляем! Ваш сайт раскручен!'
     delite.innerText = ''
 }
 const rotate = new Audio(`rotate-sound.mp3`)
