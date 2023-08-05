@@ -100,6 +100,15 @@ button{
         margin: 10% auto;
         width: 50%;
     }
+    input{
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+        height: 8%;
+        padding-left: 3%;
+        border: none;
+        border-radius: 5px;
+    }
     button{
         margin-top: 2%;
         margin-left: 25%;
