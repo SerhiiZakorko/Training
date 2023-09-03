@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/x-icon" href="./ban.jpg" rel="shortcut icon" />
+    <title>Banana</title>
+    <link rel="stylesheet" href="./banana.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="main-title">Our products:</h1>
+      <div class="sort-btns">
+        <button id="sort-by-desc">Сортировать по убыванию цены</button>
+        <div class="basket-wrapper">
+          <h2>Корзина</h2>
+          <div class="basket"></div>
+        </div>
+        <button id="sort-by-asc">Сортировать по возрастанию цены</button>
+      </div>
+      <div class="total">
+        <p class="total-quantity"></p>
+        <p class="total-price"></p>
+      </div>
+      <div id="target"></div>
+      <div class="add-div">
+        <div class="inputs">
+          <label>Product:</label
+          ><input type="text" class="name" placeholder="Product" />
+          <label for="">Price:</label
+          ><input type="text" class="price" placeholder="Price" />
+          <label for="">Quantity:</label
+          ><input type="text" class="quantity" placeholder="Quantity" />
+        </div>
+        <button id="btn-add">ADD PRODUCT</button>
+        <p id="message"></p>
+      </div>
+    </main>
+    <script src="./banana.js"></script>
+  </body>
+</html>
