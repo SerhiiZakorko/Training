@@ -24,22 +24,22 @@ const cartItems = [
   { name: "Mango", price: 70, quantity: 4 },
   { name: "Grapes", price: 30, quantity: 3 },
   { name: "Watermelon", price: 120, quantity: 1 },
-  /*{ name: "Cherry", price: 80, quantity: 2 },
-  { name: "Pear", price: 55, quantity: 3 },
-  { name: "Kiwi", price: 60, quantity: 2 },
-  { name: "Strawberry", price: 40, quantity: 5 },
-  { name: "Blueberry", price: 75, quantity: 2 },
-  { name: "Raspberry", price: 90, quantity: 3 },
-  { name: "Pomegranate", price: 100, quantity: 1 },
-  { name: "Blackberry", price: 55, quantity: 4 },
-  { name: "Apricot", price: 35, quantity: 3 },
-  { name: "Plum", price: 30, quantity: 2 },
-  { name: "Lemon", price: 10, quantity: 5 },
-  { name: "Lime", price: 15, quantity: 2 },
-  { name: "Cantaloupe", price: 80, quantity: 1 },
-  { name: "Honeydew", price: 70, quantity: 2 },
-  { name: "Fig", price: 50, quantity: 3 },
-  { name: "Guava", price: 65, quantity: 2 },*/
+  // { name: "Cherry", price: 80, quantity: 2 },
+  // { name: "Pear", price: 55, quantity: 3 },
+  // { name: "Kiwi", price: 60, quantity: 2 },
+  // { name: "Strawberry", price: 40, quantity: 5 },
+  // { name: "Blueberry", price: 75, quantity: 2 },
+  // { name: "Raspberry", price: 90, quantity: 3 },
+  // { name: "Pomegranate", price: 100, quantity: 1 },
+  // { name: "Blackberry", price: 55, quantity: 4 },
+  // { name: "Apricot", price: 35, quantity: 3 },
+  // { name: "Plum", price: 30, quantity: 2 },
+  // { name: "Lemon", price: 10, quantity: 5 },
+  // { name: "Lime", price: 15, quantity: 2 },
+  // { name: "Cantaloupe", price: 80, quantity: 1 },
+  // { name: "Honeydew", price: 70, quantity: 2 },
+  // { name: "Fig", price: 50, quantity: 3 },
+  // { name: "Guava", price: 65, quantity: 2 }
 ];
 
 //-----------------------------Имя с большой буквы---------------------------------
@@ -141,7 +141,8 @@ buyBtns = document.querySelectorAll(".buy-btn");
 
 function addToBascket(id){
 let product = arrID.find(el => el.ID === id)
-basket.innerHTML += `<p>${product.name}</p>`
+product.quantity === 0 ? null
+: basket.innerHTML += `<p>${product.name}</p>`
 minusQuantity(id)
 }
 
@@ -165,7 +166,6 @@ deleteButtons.forEach((btn) => {
 })
 
 //--------------------------------------Управление количеством--------------------------------
-
 btnPlus = document.querySelectorAll('.plus-btn') //---------plus
 
 function plusQuantity(id){
@@ -173,7 +173,7 @@ function plusQuantity(id){
   product.quantity ++
   console.log(product.quantity)
   renderCard(arrID, div)
-  }
+}
 
 btnPlus.forEach((btn) => {
   btn.addEventListener('click', (e) => {
@@ -192,11 +192,11 @@ else
   product.quantity --
   console.log(product.quantity)
   renderCard(arrID, div)
-  }
+}
 
-  btnMinus.forEach((btn) => {
+btnMinus.forEach((btn) => {
     btn.addEventListener('click', (e) => {
       const id = e.target.getAttribute('data-id');
       minusQuantity(id)
     })
-  })
+})
